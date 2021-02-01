@@ -15,6 +15,9 @@ osm package-create ns mlapp
 3. Onboard VNF/NS (must be repeated every time the VNFD/NSD code is modified)
 ```
 osm nfpkg-create mlpredictor_vnf/
+osm nfpkg-create mlmodeler_vnf/
+osm nfpkg-create mlbalancer_vnf/
+osm nfpkg-create mlmonitor_vnf/
 osm nspkg-create mlapp_ns/
 ```
 

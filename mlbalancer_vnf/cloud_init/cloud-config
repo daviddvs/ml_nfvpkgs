@@ -1,0 +1,5 @@
+#cloud-config
+hostname: mlbalancer
+password: ubuntu
+chpasswd: { expire: False }
+ssh_pwauth: True

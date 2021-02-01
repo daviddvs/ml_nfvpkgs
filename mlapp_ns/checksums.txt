@@ -1,2 +1,2 @@
 0c447ea322b4473ab74d91ad0ae284d8	mlapp_ns/README.md
-77daa9b9d4adb0118ef4391e64f05866	mlapp_ns/mlapp_nsd.yaml
+7bc4ee130a393ddbbeedec5349d9c591	mlapp_ns/mlapp_nsd.yaml
