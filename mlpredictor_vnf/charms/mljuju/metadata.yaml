@@ -1,0 +1,21 @@
+# Copyright 2020 davidf
+# See LICENSE file for licensing details.
+name: mljuju
+description: |
+  NFV-ML-EC native charm
+summary: |
+  Let's start with kubernetes
+series:
+  #- kubernetes
+  - focal
+provides:
+  server:
+    interface: server-ip
+  #peers:
+#  proxypeer:
+#    interface: proxypeer
+#tags:
+#  - osm
+#  - proxycharm
+#  - ssh
+

@@ -1,0 +1,14 @@
+# Copyright 2020 davidf
+# See LICENSE file for licensing details.
+name: modeler
+description: |
+  TODO: fill out the charm's description
+summary: |
+  TODO: fill out the charm's summary
+series: 
+  #- kubernetes
+  - focal
+requires:
+  server:
+    interface: server-ip
+
