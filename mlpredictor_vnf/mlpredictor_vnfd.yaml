@@ -72,6 +72,10 @@ vnfd-catalog:
                 entities:
                 -   id: mlbalancer_vnfd-VM
                     endpoint: server
+                -   id: mlmodeler_vnfd-VM
+                    endpoint: server
+                -   id: mlmonitor_vnfd-VM
+                    endpoint: server
                 -   id: mlpredictor_vnfd-VM
                     endpoint: server
         

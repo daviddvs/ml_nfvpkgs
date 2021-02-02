@@ -66,6 +66,15 @@ vnfd-catalog:
                         required: true
                         default-user: ubuntu
 
+        vnf-configuration:
+            relation:
+            -   name: server
+                entities:
+                -   id: mlmodeler_vnfd-VM
+                    endpoint: server
+                -   id: mlpredictor_vnfd-VM
+                    endpoint: server
+        
         connection-point:
         -   name: vnf-mgmt
             type: VPORT

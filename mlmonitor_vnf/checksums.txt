@@ -1,5 +1,5 @@
 852f6409ff5e5c87b775856997682497	mlmonitor_vnf/README.md
-8c35c70a27e74221d2f0038960539e20	mlmonitor_vnf/mlmonitor_vnfd.yaml
+70959dc3e89c1a6ee4680821ef505b80	mlmonitor_vnf/mlmonitor_vnfd.yaml
 50b3a01dce946b458b45a247051ea6ae	mlmonitor_vnf/charms/monitor/metadata.yaml
 399ed238411157ac4a12c69a60ab45cd	mlmonitor_vnf/charms/monitor/README.md
 3709f0e4be0689d45d6f39b0faeb86c9	mlmonitor_vnf/charms/monitor/actions.yaml

@@ -1,5 +1,11 @@
 #cloud-config
 hostname: mlpredictor
-password: ubuntu
-chpasswd: { expire: False }
+chpasswd:
+  list: |
+    ubuntu:ubuntu
+    root:root
+  expire: False
 ssh_pwauth: True
+runcmd:
+  - echo "PermitRootLogin yes" >> /etc/ssh/sshd_config
+  - service sshd restart

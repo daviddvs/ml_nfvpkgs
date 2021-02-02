@@ -1,4 +1,4 @@
-c2683ab96bfe2eb9d381fc4573fee0ca	mlbalancer_vnf/mlbalancer_vnfd.yaml
+ce68a9f22049f819da03d09fe1ff2e58	mlbalancer_vnf/mlbalancer_vnfd.yaml
 b64ee9a79edb80bb95f789c0400ed765	mlbalancer_vnf/README.md
 da9c368e00281dadaad250e7ddf62147	mlbalancer_vnf/charms/balancer/metadata.yaml
 d6c25b7bb734d6c1ee649a6e1bbf13af	mlbalancer_vnf/charms/balancer/README.md
