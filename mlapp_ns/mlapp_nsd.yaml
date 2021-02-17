@@ -46,7 +46,7 @@ nsd-catalog:
             short-name: mgmt
             type: ELAN
             mgmt-network: true
-            vim-network-name: provider-lab
+            vim-network-name: sn4i-vlan-889
 
             # Specify the constituent VNFs
             # member-vnf-index-ref - entry from constituent vnf
