@@ -1,10 +1,16 @@
 # OSM packages for ML app
 
 ## OSM steps to deploy VNF/NS
+Before start, run the follwing scripts (need to be run on every restart of the OSM machine):
+```
+cd scripts
+sudo sh ./ro_container.sh
+mon_container.sh
+```
 1. Create VIM
 ```
 osm vim-create --name Openstack --user <user> --password <password> --auth_url <vim_url> --tenant <tenant> --account_type openstack
-# Examples:
+# Examples (password is requested by console):
 osm vim-create --name Openstack --user david_franco --auth_url http://10.98.1.100:35357/v3/ --tenant david_franco --account_type openstack
 osm vim-create --name openstack-cfaa-sn4i --auth_url http://cfaa-controller:5000/v3/ --tenant SN4I --user "admin" --account_type openstack --description "OpenStack CFAA SN4I" # password is asked
 osm vim-create --name openstack-eib-sn4i --auth_url http://supermicro-1:35357/v3/ --tenant SN4I --user "admin-SN4I" --account_type openstack --description "OpenStack EIB SN4I" --config '{"user_domain_name": "SN4I", "project_domain_name": "SN4I"}' # password is asked
@@ -31,7 +37,7 @@ osm ns-create --ns_name mlapp --nsd_name mlapp_nsd --vim_account Openstack
 # Examples:
 osm ns-create --ns_name mlapp_cfaa --nsd_name mlapp_nsd --vim_account openstack-cfaa-sn4i
 osm ns-create --ns_name mlapp_eib --nsd_name mlapp_nsd --vim_account openstack-eib-sn4i
-osm ns-create --ns_name mlapp_eib_cfaa --nsd_name mlapp_nsd --vim_account openstack-eib-sn4i --config ' { vnf: [ {member-vnf-index: "1", vim_account: openstack-eib-sn4i}, {member-vnf-index: "2", vim_account: openstack-cfaa-sn4i}, {member-vnf-index: "3", vim_account: openstack-eib-sn4i}, {member-vnf-index: "4", vim_account: openstack-cfaa-sn4i} ] }, wim_account: false'
+osm ns-create --ns_name mlapp_eib_cfaa --nsd_name mlapp_nsd --vim_account openstack-eib-sn4i --config '{ vnf: [ {member-vnf-index: "1", vim_account: openstack-eib-sn4i}, {member-vnf-index: "2", vim_account: openstack-cfaa-sn4i}, {member-vnf-index: "3", vim_account: openstack-eib-sn4i}, {member-vnf-index: "4", vim_account: openstack-cfaa-sn4i} ] , wim_account: false }'
 ```
 
 5. Debug
