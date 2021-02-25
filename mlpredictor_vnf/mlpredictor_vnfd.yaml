@@ -40,7 +40,7 @@ vnfd-catalog:
 
             # Flavour of the VM to be instantiated for the VDU
             vm-flavor:
-                vcpu-count: 1
+                vcpu-count: 2
                 memory-mb: 1024
                 storage-gb: 10
 
