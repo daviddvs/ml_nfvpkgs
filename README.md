@@ -7,6 +7,13 @@ cd scripts
 sudo sh ./ro_container.sh
 mon_container.sh
 ```
+
+Run this command every time you delete a service
+```
+ssh ubuntu@10.98.1.100
+> sh remove-hosts.sh
+```
+
 1. Create VIM
 ```
 osm vim-create --name Openstack --user <user> --password <password> --auth_url <vim_url> --tenant <tenant> --account_type openstack
